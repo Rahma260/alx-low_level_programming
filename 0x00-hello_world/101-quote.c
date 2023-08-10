@@ -1,8 +1,9 @@
 /*
- * file : 4-puts.c
+ * file :101-qoute.c
  * code written by : Rahma Khaled
  * email: rahmakh248@gmail.com
  */
+#include <unistd.h>
 #include <stdio.h>
 /**
  * main - Prints "Programming is like building a multilingual
