@@ -4,13 +4,13 @@
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /*
-	* entry point
-	* always return zero
- */
+* entry point
+* always return zero
+*/
 int main(void)
 {
 	int n;
-        srand(time(0));
+	srand(time(0));
         n = rand() - RAND_MAX / 2;
         /* your code goes there */
         if (n > 0)
