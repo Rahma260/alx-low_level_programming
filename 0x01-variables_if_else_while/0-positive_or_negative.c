@@ -1,11 +1,14 @@
+/**
+ * written by Rahma Khaled
+ */
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
 /*
-* entry point
-* always return zero
+* main - print whether the number stored
+* in the variable n is positive or negative.
+* Description:using if
+* Return:always success
 */
 int main(void)
 {
