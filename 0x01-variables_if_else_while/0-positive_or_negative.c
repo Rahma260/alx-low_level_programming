@@ -1,22 +1,24 @@
-/**
- * written by Rahma Khaled
+/*
+ * file : 0-positive_or_negative.c
+ * code written by : Rahma Khaled
  */
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
-* main - print whether the number stored
-* in the variable n is positive or negative.
-* Description:using if
-* Return:always success
-*/
+
+/**
+ * main - Prints if number is positive, zero or negative
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        /* your code goes there */
-        if (n > 0)
+	n = rand() - RAND_MAX / 2;
+
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
@@ -28,5 +30,6 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-        return (0);
+
+	return (0);
 }
