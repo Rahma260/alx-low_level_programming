@@ -12,7 +12,7 @@
  */
 int main(void)
 {
-        char  i;
+	char i;
 
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -20,9 +20,9 @@ int main(void)
 	}
 
 	for (i = 'a'; i <= 'f'; i++)
-        {
-                putchar(i);
-        }
+	{
+		putchar(i);
+	}
 
 	putchar('\n');
 
