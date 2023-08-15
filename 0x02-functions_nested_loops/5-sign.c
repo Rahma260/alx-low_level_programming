@@ -1,0 +1,37 @@
+/*
+ * file : 5-sign.c
+ * code written by : Rahma Khaled
+ */
+#include "main.h"
+/**
+  * print_sign  -  Prints the sign of a number.
+  * @i: The character to be checked
+  *
+  * Return:1 and prints + if n is greater than zero
+  * 0 and prints 0 if n is zero
+  * -1 and prints - if n is less than zero
+  */
+int print_sign(int i)
+{
+
+	if (i > 0)
+	{
+		return (1);
+		_putchar('+');
+	}
+
+	else if (i < 0)
+	{
+		return (-1);
+		_putchar('-');
+	}
+
+	else
+	{
+		return (0);
+		_putchar(0);
+	}
+
+	_putchar('\n');
+
+}
