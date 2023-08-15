@@ -5,31 +5,31 @@
 #include "main.h"
 /**
   * print_sign  -  Prints the sign of a number.
-  * @i: The character to be checked
+  * @n: The number to be checked
   *
   * Return:1 and prints + if n is greater than zero
   * 0 and prints 0 if n is zero
   * -1 and prints - if n is less than zero
   */
-int print_sign(int i)
+int print_sign(int n)
 {
 
-	if (i > 0)
+	if (n > 0)
 	{
+		_putchar(43);
 		return (1);
-		_putchar('+');
 	}
 
-	else if (i < 0)
+	else if (n < 0)
 	{
+		_putchar(45);
 		return (-1);
-		_putchar('-');
 	}
 
 	else
 	{
+		_putchar(48);
 		return (0);
-		_putchar(0);
 	}
 
 	_putchar('\n');
