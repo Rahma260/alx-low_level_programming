@@ -26,6 +26,7 @@ void print_to_98(int i)
 			_putchar(n + 48);
 			break;
 		}
+	}
 
 		for (; n >= 98; n--)
 		{
