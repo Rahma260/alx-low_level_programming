@@ -6,7 +6,7 @@
 /**
   * _isalpha  - Prints the absolute value of number
   * @i: The number to be checked
-  *
+  * @j : to compute the absolute value
   * Return : Always success
   */
 int _abs(int i)
@@ -15,6 +15,7 @@ int _abs(int i)
 	if (i < 0)
 	{
 		int j = i * -1;
+
 		return (j);
 	}
 		
