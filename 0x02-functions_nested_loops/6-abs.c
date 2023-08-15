@@ -6,7 +6,7 @@
 /**
   * _isalpha  - Prints the absolute value of number
   * @i: The number to be checked
-  * Return : _abs value is lower than zero
+  * Return: Absolute value of number or zero
   */
 int _abs(int i)
 {
