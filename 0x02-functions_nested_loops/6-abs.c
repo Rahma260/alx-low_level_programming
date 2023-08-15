@@ -4,13 +4,12 @@
  */
 #include "main.h"
 /**
-  * _isalpha  - Prints the absolute value of number
+  * _abs  - Prints the absolute value of number
   * @i: The number to be checked
   * Return: Absolute value of number or zero
   */
 int _abs(int i)
 {
-
 	if (i < 0)
 	{
 		int j = i * -1;
