@@ -2,6 +2,7 @@
  * file :11-print_to_98.c
  * code written by : Rahma Khaled
  */
+#include <stdio.h>
 #include "main.h"
 /**
   * print_to_98  - Prints all natural numbers
@@ -11,37 +12,20 @@
   */
 void print_to_98(int i)
 {
-	int n = i;
-
-	for (; n <= 98; n++)
+	if (i <= 98)
 	{
-		_putchar(n + '0');
-		if (n < 98)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		if (n == '0')
+		for (; i <= 98; i++)
 		{
-			_putchar(n + 48);
-			break;
+			if (i == 98)
+			{
+				printf("%d", i);
+				break;
+			}
+			else
+			{
+				printf("%d, ", i);
+			}
 		}
+		printf("\n");
 	}
-
-		for (; n >= 98; n--)
-		{
-		_putchar(n + '0');
-		if (n < 98)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		if (n == 98)
-		{
-			_putchar(n + '0');
-			break;
-		}
-		else
-			_putchar(n + '0');
-		}
 }
