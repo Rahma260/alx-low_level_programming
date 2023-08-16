@@ -4,7 +4,7 @@
  */
 #include "main.h"
 /**
-  * time_table - Prints the 9 times table, starting with 0.
+  * times_table - Prints the 9 times table, starting with 0.
   * Return: void
   */
 void times_table(void)
@@ -25,7 +25,7 @@ void times_table(void)
 				_putchar(c + 48);
 				_putchar(b + 48);
 			}
-			else 
+			else
 			{
 				if (j != 0)
 				{
