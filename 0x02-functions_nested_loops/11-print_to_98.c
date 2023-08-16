@@ -44,4 +44,27 @@ void print_to_98(int i)
 		else
 			_putchar(n + '0');
 		}
+<<<<<<< HEAD
+=======
+		printf("\n");
+	}
+	else if (i > 98)
+	{
+		for (; i >= 98; i--)
+		{
+			if (i == 98)
+			{
+				printf("%d", i);
+				break;
+			}
+			else
+			{
+				printf("%d, ", i);
+			}
+		}
+		printf("\n");
+	}
+	else
+		printf("%d\n", i);
+>>>>>>> 6625331609edec7cd50b52beeff3f850358a590d
 }
