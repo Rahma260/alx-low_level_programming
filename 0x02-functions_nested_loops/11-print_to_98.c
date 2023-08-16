@@ -28,4 +28,22 @@ void print_to_98(int i)
 		}
 		printf("\n");
 	}
+	else if (i > 98)
+	{
+		for (; i >= 98; i--)
+		{
+			if (i == 98)
+			{
+				printf("%d", i);
+				break;
+			}
+			else
+			{
+				printf("%d, ", i);
+			}
+		}
+		printf("\n");
+	}
+	else
+		printf("%d\n", i);
 }
