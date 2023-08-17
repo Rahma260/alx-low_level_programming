@@ -6,11 +6,11 @@
 #include "main.h"
 
 /**
- * print_diagonal - Prints a triangle, followed by a new line.
- * @n : the integer to be checked
+ * print_triangle - Prints a triangle, followed by a new line.
+ * @size : the integer to be checked
  * Return: void
  */
-void print_triangle(int n)
+void print_triangle(int size)
 {
 	int x, y = 0;
 	int space;
@@ -39,3 +39,4 @@ void print_triangle(int n)
 	}
 	else
 		_putchar('\n');
+}
