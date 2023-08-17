@@ -1,4 +1,4 @@
-/*
+i/*
  * file : 5-more_numbers.c
  * code written by : Rahma Khaled
  */
@@ -11,14 +11,21 @@
  */
 void more_numbers(void)
 {
-	int a, b;
+	int a = 0;
+	int b = 0;
 
-	for (a = 0; a <= 9; a++)
+	while (b <= 9)
 	{
-		for (b = 0; b <= 9; b++)
+		while (a <= 14)
 		{
-			_putchar(b + 48);
+			if (a > 9)
+				_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
+			a++;
+
 		}
-		_putchar('\n');
+	_putchar('\n');
+	b++;
+	a = 0;
 	}
 }
