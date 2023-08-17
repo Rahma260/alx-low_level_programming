@@ -1,4 +1,4 @@
-i/*
+/*
  * file : 5-more_numbers.c
  * code written by : Rahma Khaled
  */
