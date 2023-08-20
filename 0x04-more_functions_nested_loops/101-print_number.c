@@ -32,7 +32,7 @@ void print_number(int n)
 	{
 		if (i == 1)
 		{
-			_putchar(a % 10 + 48);
+			_putchar((a % 10) + 48);
 			a = -1;
 		}
 		else
