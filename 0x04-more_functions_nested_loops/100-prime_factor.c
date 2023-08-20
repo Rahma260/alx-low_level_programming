@@ -11,17 +11,18 @@
  */
 int main(void)
 {
-	int a;
-	long n = 612852475143;
+	int c;
+	long num = 612852475143;
 
-	for (a = (int)n * n; a > 2; a++)
+	for (c = (int) sqrt(num); c > 2; c++)
 	{
-		if (n % a == 0)
+		if (num % c == 0)
 		{
-			printf("%d\n", a);
+			printf("%d\n", c);
 			break;
 		}
 	}
+
 
 	return (0);
 }
