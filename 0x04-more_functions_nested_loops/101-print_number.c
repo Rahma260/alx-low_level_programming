@@ -12,7 +12,7 @@
 void print_number(int n)
 {
 	long a;
-	int i = 1;
+	long i = 1;
 	int j = 1;
 
 	a = n;
@@ -23,7 +23,7 @@ void print_number(int n)
 	}
 	while (j)
 	{
-		if ((a / 10) > 0)
+		if ((a / (i * 10)) > 0)
 			i *= 10;
 		else
 			j = 0;
@@ -37,8 +37,7 @@ void print_number(int n)
 		}
 		else 
 		{
-			_putchar(a / i + 48);
-			_putchar(a % 10 + 48);
+			_putchar(a / i % 10 + 48);
 			i = i / 10;
 		}
 	}
