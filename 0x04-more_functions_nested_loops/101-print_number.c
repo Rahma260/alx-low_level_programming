@@ -35,7 +35,7 @@ void print_number(int n)
 			_putchar(a % 10 + 48);
 			a = -1;
 		}
-		else 
+		else
 		{
 			_putchar(a / i % 10 + 48);
 			i = i / 10;
