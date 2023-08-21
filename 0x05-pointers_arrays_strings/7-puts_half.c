@@ -30,7 +30,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		while (str[c] != '\0')
+		while (c < a - 1)
 		{
 			_putchar(str[c]);
 			c++;
