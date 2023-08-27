@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <limits.h>
 /**
- * atoi - Convert a string to an integer.
+ * _atoi - Convert a string to an integer.
  * @s : the string to be converted
  * Return: integer
  */
