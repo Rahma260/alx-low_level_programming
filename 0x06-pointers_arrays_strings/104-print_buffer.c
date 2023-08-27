@@ -3,7 +3,7 @@
  * written by : Rahma Khale
  */
 
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
