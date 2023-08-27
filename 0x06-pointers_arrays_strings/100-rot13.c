@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- * leet -  encodes a string using rot13.
+ * rot13 -  encodes a string using rot13.
  * @s : the string to be changed
  * Return: the string
  */
