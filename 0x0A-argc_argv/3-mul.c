@@ -12,18 +12,14 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 0;
 
-	while (i <= argc - 1)
+	if (argc - 1 != 2)
 	{
-		if (argc - 1 < 2)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-			printf("%d\n", atoi(argv[i + 1]) * atoi(argv[i + 2]));
-		i++;
+		printf("Error\n");
+		return (1);
 	}
+	else
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+
 	return (0);
 }
