@@ -2,19 +2,18 @@
  * file name : 4-add.c
  * written by : Rshma Khaled
  */
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 /**
- * main - adds two numbers, followed by a new line.
+ * main - adds positive numbers.
  * @argc: number of command line arguments.
  * @argv: array that contains the program command line arguments.
  * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
-	int i, j;
-	int add = 0;
+	int i, j, add = 0;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -22,7 +21,7 @@ int main(int argc, char *argv[])
 		{
 			if (!isdigit(argv[i][j]))
 			{
-				printf("Erorr\n");
+				printf("Error\n");
 				return (1);
 			}
 		}
