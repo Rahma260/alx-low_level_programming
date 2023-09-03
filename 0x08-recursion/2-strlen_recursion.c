@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion - find the length of string
+ * _strlen_recursion - find the length of string
  * @s : the string to be counted
  * Return: integer
  */
