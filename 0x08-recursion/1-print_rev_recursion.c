@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion - Prints a string in reverse 
+ * _print_rev_recursion - Prints a string in reverse
  * , followed by a new line, to stdout.
  * @s : the string to be printed
  * Return: void
