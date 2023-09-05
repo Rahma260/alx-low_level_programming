@@ -14,9 +14,12 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0;
-	char *array = (char *) malloc(i * sizeof(array) + 1);
+	unsigned int i;
+	char *array;
 
+	for (i = 0; str[i] != '\0'; i++)
+                ;
+	array = (char *) malloc(i * sizeof(array) + 1);
 	if (str == NULL)
 		return (NULL);
 	if (array == NULL)
@@ -26,10 +29,6 @@ char *_strdup(char *str)
 		array[i] = str[i];
 		i++;
 	}
-	for (i = 0; array[i] != '\0'; i++)
-		;
 	array[i] = '\0';
 	return (array);
-
-
 }
