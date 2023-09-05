@@ -1,4 +1,4 @@
-i/*
+/*
  * file : 1-strdup.c
  * code written by : Rahma Khaled
  */
@@ -23,13 +23,13 @@ char *_strdup(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 		;
 
-	array = malloc(i * sizeof(*a) + 1);
+	array = malloc(i * sizeof(*array) + 1);
 	if (array == NULL)
 		return (NULL);
 
 	for (j = 0; j < i; j++)
-		a[j] = str[j];
-	a[j] = '\0';
+		array[j] = str[j];
+	array[j] = '\0';
 
-	return (a);
+	return (array);
 }
