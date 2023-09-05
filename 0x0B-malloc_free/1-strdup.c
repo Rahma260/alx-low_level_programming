@@ -15,6 +15,7 @@
 char *_strdup(char *str)
 {
 	unsigned int i;
+	int j = 0;
 	char *array;
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -24,11 +25,11 @@ char *_strdup(char *str)
 		return (NULL);
 	if (array == NULL)
 		return (NULL);
-	while (str[i] != '\0')
+	while (str[j] != '\0')
 	{
-		array[i] = str[i];
-		i++;
+		array[j] = str[j];
+		j++;
 	}
-	array[i] = '\0';
+	array[j] = '\0';
 	return (array);
 }
