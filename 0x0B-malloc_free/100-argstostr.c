@@ -21,10 +21,10 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	if (av == 0)
 		return (NULL);
-
-	for (i = 0; i < ac; i++)
+	i = 0;
+	for (j = 0; j < ac; j++)
 	{
-		for (a= 0; av[j][a] != '\0'; a++)
+		for (a = 0; av[j][a] != '\0'; a++)
 			i++;
 		i++;
 	}
