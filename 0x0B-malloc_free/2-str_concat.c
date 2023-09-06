@@ -28,12 +28,12 @@ char *str_concat(char *s1, char *s2)
 		;
 	for (j = 0; s2[j] != '\0'; j++)
 		;
-
-	array = malloc(i * sizeof(s1) + j * sizeof(s2) + 1);
+	j++;
+	array = malloc(i * sizeof(s1) + j * sizeof(s2));
 	if (array == 0)
 		return (NULL);
 
-	for (a = 0, b = 0; a < i + j + 1; a++)
+	for (a = 0, b = 0; a < i + j; a++)
 	{
 		if (a < i)
 			array[a] = s1[a];
