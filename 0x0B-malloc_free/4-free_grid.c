@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * free _grid - free an array
+ * free_grid - free an array
  * @grid : the array will be freed
  * @height : the height of array
  * Return: void
