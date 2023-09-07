@@ -9,6 +9,7 @@
  * string_nconcat - concatenates two strings.
  * @s1 : the first string
  * @s2 : the second string
+ * @n : number of bytes should print fron s2
  * Return: The returned pointer should point to a newly allocated space
  * in memory which contains the contents of s1,
  * followed by the contents of s2, and null terminated
@@ -17,7 +18,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *array;
-	int i, j, b, a;
+	unsigned int i, j, b, a;
 
 	if (s1 == 0)
 		s1 = "";
