@@ -15,34 +15,32 @@
  * followed by the contents of s2, and null terminated
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
-	char *array;
-	unsigned int i, j, b, a;
+char *concat;
+	unsigned int len = n, index;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 		s1 = "";
-	if (s2 == 0)
+
+	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; j < n; j++)
-		;
-	j++;
-	array = malloc(i * sizeof(*s1) + j * sizeof(*s2));
-	if (array == 0)
+	for (index = 0; s1[index]; index++)
+		len++;
+
+	concat = malloc(sizeof(char) * (len + 1));
+
+	if (concat == NULL)
 		return (NULL);
 
-	for (a = 0, b = 0; a < i + j; a++)
-	{
-		if (a < i)
-			array[a] = s1[a];
-		else
-			array[a] = s2[b++];
-	}
-	array[a] = '\0';
+	len = 0;
 
-	return (array);
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
 
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
