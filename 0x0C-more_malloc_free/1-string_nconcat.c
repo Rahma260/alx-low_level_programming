@@ -41,6 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 			array[a] = s2[b++];
 	}
+	array[a] = '\0';
 
 	return (array);
 
