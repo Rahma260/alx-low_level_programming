@@ -8,9 +8,10 @@
  *@owner : owner of dog
  *Description: Defines metadata about the dog and type of dog's struct
  */
-typedef struct dog {
+typedef struct dog
+{
 	char *name;
 	float age;
 	char *owner;
-}Dog;
+} Dog;
 #endif
