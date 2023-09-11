@@ -1,8 +1,8 @@
 /*
- * file : 3-alloc_grid
+ * file : 1-init_dog.c
  * code written by : Rahma Khaled
  */
-#include "main.h"
+#include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
 /**
