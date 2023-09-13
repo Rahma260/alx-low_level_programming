@@ -10,27 +10,27 @@
  */
 int main(int argc, char **argv)
 {
-	int a, b;
-	int (*opss)(int, int);
+	int n1, n2, result;
+	int (*p)(int, int);
 
-	if (argc != 4)
+	if (argc < 4 || argc > 4)
 	{
-		printf("Erorr\n");
+		printf("Error\n");
 		exit(98);
 	}
-	if (argv[2][1] != '\0')
-	{
-		printf("Erorr\n");
-		exit(99);
-	}
-	opss = get_op_func(argv[2]);
-	if (opss == NULL)
+
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[3]);
+
+	p = get_op_func(argv[2]);
+
+	if (p == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	printf("%d\n", opss(a, b));
+	result = p(n1, n2);
+
+	printf("%d\n", result);
 	return (0);
 }
