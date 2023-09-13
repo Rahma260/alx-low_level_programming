@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 	a = atoi(argv[1]);
-        b = atoi(argv[3]);
+	b = atoi(argv[3]);
 	printf("%d\n", opss(a, b));
 	return (0);
 }
