@@ -2,7 +2,7 @@
  * file : 0-print_name.c
  * code written by : Rahma Khaled
  */
-#include "function_pointers"
+#include "function_pointers.h"
 
 /**
  * print_name - prints a name
