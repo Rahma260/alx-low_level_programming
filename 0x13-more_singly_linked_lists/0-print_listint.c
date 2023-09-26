@@ -6,17 +6,13 @@
  * @h: pointer to the head of the list_t list.
  *
  * Return: The number of nodes in the list_t list.
- */
-size_t print_listint(const listint_t *h)
+ */size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;
+	const listint_t *c;
+	size_t count;
 
-	while (h)
-	{
-		count++;
-		printf("%d\n", h->n);
-		h = h->next;
-	}
+	for (c = h, count = 0; c != NULL; count++, c = c->next)
+		printf("%d\n", c->n);
 
 	return (count);
 }
