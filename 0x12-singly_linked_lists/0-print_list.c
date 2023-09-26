@@ -3,9 +3,7 @@
  * code written by : Rahma Khaled
  */
 #include "lists.h"
-#include <stdlib.h>
 #include <stdio.h>
-#include <stddef.h>
 /**
  * print_list - prints all the elements of a list_t list.
  * @h : pointer to the first node
