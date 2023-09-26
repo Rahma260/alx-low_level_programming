@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * _strpbrk - locates the first occurrence in the string s of any
