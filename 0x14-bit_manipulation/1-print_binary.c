@@ -3,7 +3,6 @@
  * code written by : Rahma Khaled
  */
 #include "main.h"
-#include <string.h>
 /**
  * print_binary -  prints the binary representation of a number.
  * @n : the number to be converted
@@ -11,14 +10,16 @@
  */
 char *print_binary(unsigned long int n)
 {
-	char *p = "";
-
 	if (n == 0)
-		return (0);
-	while (n > 0)
 	{
-		p = ((n & 1) == 0 ? 0 : 1) + p;
-		n >>= 1;
+		_putchar('0');
+		return;
 	}
-	return (p);
+	else if (n == 1)
+	{
+		_putchar ('1');
+		return;
+	}
+	print_binary(n >> 1);
+	_putchar('0' + (n & 1));
 }
