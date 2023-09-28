@@ -9,7 +9,7 @@
  * @n : the number to be converted
  * Return: void
  */
-char *print_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	if (n == 0)
 	{
