@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	if (filefrom == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n"
 				, argv[1]), exit(98);
-	fileto = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC |
+	fileto = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR |
 			S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (fileto == -1)
 	{
