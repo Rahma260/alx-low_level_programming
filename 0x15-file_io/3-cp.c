@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	while (num1 == 1024)
 	{
 		num1 = read(filefrom, buf, 1024);
-		if (num1 == 1024)
+		if (num1 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
